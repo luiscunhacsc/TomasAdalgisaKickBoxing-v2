@@ -1,6 +1,19 @@
 package com.tomas.kickboxing.model;
 
+/**
+ * Classe Fighter representa um lutador de kickboxing.
+ * Demonstra os conceitos de:
+ * - Classe e objeto
+ * - Encapsulamento (atributos privados)
+ * - Construtor
+ * - Polimorfismo (sobrescrita do método toString)
+ * - Pode ser usada em coleções (List<Fighter>)
+ *
+ * Sugestão didática: Para herança, interfaces, composição e classes abstratas,
+ * veja README.md para exemplos de expansão deste projeto.
+ */
 public class Fighter {
+    // Encapsulamento: atributos privados
     private int id;
     private String name;
     private String nickname;
@@ -16,6 +29,9 @@ public class Fighter {
     private String team;
     private String lastUpdate;
 
+    /**
+     * Construtor: inicializa todos os atributos do lutador
+     */
     public Fighter(int id, String name, String nickname, String photo, String gender, String birthDate, Integer age, String height, String weight, String reach, String stance, String category, String team, String lastUpdate) {
         this.id = id;
         this.name = name;
@@ -33,6 +49,7 @@ public class Fighter {
         this.lastUpdate = lastUpdate;
     }
 
+    // Métodos públicos de acesso (getters)
     public int getId() { return id; }
     public String getName() { return name; }
     public String getNickname() { return nickname; }
@@ -48,6 +65,9 @@ public class Fighter {
     public String getTeam() { return team; }
     public String getLastUpdate() { return lastUpdate; }
 
+    /**
+     * Polimorfismo: sobrescrita do método toString para exibir informações formatadas do lutador.
+     */
     @Override
     public String toString() {
         return String.format("%s%s\n  Idade: %s\n  Altura: %s  Peso: %s  Alcance: %s\n  Categoria: %s  Equipe: %s\n  Stance: %s\n  Última atualização: %s\n", 
