@@ -1,0 +1,4 @@
+com\tomas\kickboxing\api\ApiSportsClient.class
+com\tomas\kickboxing\service\RankingService.class
+com\tomas\kickboxing\Main.class
+com\tomas\kickboxing\model\Fighter.class
